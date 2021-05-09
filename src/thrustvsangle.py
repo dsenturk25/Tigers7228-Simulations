@@ -18,16 +18,16 @@ def plot_thrustvsangle_graphs():
   test10y = np.array([7.864,7.598,9.320,7.514,8.044,7.218,7.335])
 
 
-  test1 = np.polyfit(x, test1y, 6)
-  test2 = np.polyfit(x, test2y, 6)
-  test3 = np.polyfit(x, test3y, 6)
-  test4 = np.polyfit(x, test4y, 6)
-  test5 = np.polyfit(x, test5y, 6)
-  test6 = np.polyfit(x, test6y, 6)
-  test7 = np.polyfit(x, test7y, 6)
-  test8 = np.polyfit(x, test8y, 6)
-  test9 = np.polyfit(x, test9y, 6)
-  test10 = np.polyfit(x, test10y, 6)
+  test1 = np.polyfit(x, test1y, 5)
+  test2 = np.polyfit(x, test2y, 5)
+  test3 = np.polyfit(x, test3y, 5)
+  test4 = np.polyfit(x, test4y, 5)
+  test5 = np.polyfit(x, test5y, 5)
+  test6 = np.polyfit(x, test6y, 5)
+  test7 = np.polyfit(x, test7y, 5)
+  test8 = np.polyfit(x, test8y, 5)
+  test9 = np.polyfit(x, test9y, 5)
+  test10 = np.polyfit(x, test10y, 5)
   
   xp = np.linspace(x[0], x[len(x)-1], 1000)
 

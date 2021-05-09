@@ -10,9 +10,9 @@ def plot_all_graphs():
   filteliy = np.array([0.061, 0.24, 0.56, 0.98, 1.54, 2.36, 2.98, 3.95, 4.99, 6.17])
   twelwepointfivey = np.array([0.061, 0.246, 0.559, 0.929, 1.549, 2.180, 2.991, 3.904, 4.713, 7.514])
 
-  filtesiz = np.polyfit(x, filtesizy, 4)
-  filteli = np.polyfit(x, filteliy, 4)
-  twelwepointfive = np.polyfit(x, twelwepointfivey, 4)
+  filtesiz = np.polyfit(x, filtesizy, 2)
+  filteli = np.polyfit(x, filteliy, 2)
+  twelwepointfive = np.polyfit(x, twelwepointfivey, 2)
 
   xp = np.linspace(x[0], x[len(x)-1], 1000)
 

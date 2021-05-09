@@ -5,7 +5,10 @@
 #from allgraphs import *
 #from thirtytwodegree import *
 #from thirtytwovsthirty import *
-from anglecomparison import *
+#from anglecomparison import *
+from thrustvsangle import *
+#from bladecomparison import *
+#from thrustvsblade import *
 
 def main():
 
@@ -25,8 +28,13 @@ def main():
 
   #plot_32vs30_graph()
 
-  plot_angle_comparison_graphs()
+  #plot_angle_comparison_graphs()
 
+  plot_thrustvsangle_graphs()
+
+  #plot_blade_comparison_graph()
+
+  #plot_thrustvsblade_graphs()
 
 if __name__ == "__main__":
     main()
