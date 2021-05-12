@@ -17,16 +17,16 @@ def plot_thrustvsblade_graphs():
   test9y = np.array([5.848,5.867,5.114,6.994])
   test10y = np.array([7.126,7.701,6.105,8.61])
 
-  test1 = np.polyfit(x, test1y, 4)
-  test2 = np.polyfit(x, test2y, 4)
-  test3 = np.polyfit(x, test3y, 4)
-  test4 = np.polyfit(x, test4y, 4)
-  test5 = np.polyfit(x, test5y, 4)
-  test6 = np.polyfit(x, test6y, 4)
-  test7 = np.polyfit(x, test7y, 4)
-  test8 = np.polyfit(x, test8y, 4)
-  test9 = np.polyfit(x, test9y, 4)
-  test10 = np.polyfit(x, test10y, 4)
+  test1 = np.polyfit(x, test1y, 5)
+  test2 = np.polyfit(x, test2y, 5)
+  test3 = np.polyfit(x, test3y, 5)
+  test4 = np.polyfit(x, test4y, 5)
+  test5 = np.polyfit(x, test5y, 5)
+  test6 = np.polyfit(x, test6y, 5)
+  test7 = np.polyfit(x, test7y, 5)
+  test8 = np.polyfit(x, test8y, 5)
+  test9 = np.polyfit(x, test9y, 5)
+  test10 = np.polyfit(x, test10y, 5)
   
   xp = np.linspace(x[0], x[len(x)-1], 1000)
 
@@ -64,5 +64,5 @@ def plot_thrustvsblade_graphs():
 
   plt.legend(loc="upper left", prop={'size': 4.5})
 
-  plt.savefig("thrustvsblade.png")
+  plt.savefig("thrustvslength.png")
   plt.show()

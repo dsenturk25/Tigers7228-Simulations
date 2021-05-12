@@ -12,6 +12,7 @@ def plot_angle_comparison_graphs():
   thirtyseveny = np.array([0.061, 0.246, 0.559, 0.929, 1.549, 2.180, 2.991, 3.904, 4.713, 7.514])
   fortyy = np.array([0.078,0.316,0.720,1.273,2.005,2.985,3.915,5.093,6.461,8.044])
   fortytwoy = np.array([0.070,0.284,0.651,1.155,1.801,2.668,3.428,4.574,5.810,7.218])
+  fortyfivey = np.array([0.069,0.284,0.642,1.154,1.794,2.691,3.463,4.592,5.722,7.335])
 
   thirty = np.polyfit(x, thirtyy, 4)
   thirtytwo = np.polyfit(x, thirtytwoy, 4)
@@ -19,6 +20,7 @@ def plot_angle_comparison_graphs():
   thirtyseven = np.polyfit(x, thirtyseveny, 4)
   forty = np.polyfit(x, fortyy, 4)
   fortytwo = np.polyfit(x, fortytwoy, 4)
+  fortyfive = np.polyfit(x, fortyfivey, 4)
 
   xp = np.linspace(x[0], x[len(x)-1], 1000)
 
@@ -28,6 +30,7 @@ def plot_angle_comparison_graphs():
   plt.plot(x, thirtyseveny, "yo", label="37.5 derece")
   plt.plot(x, fortyy, "co", label="40 derece")
   plt.plot(x, fortytwoy, "mo", label="42.5 derece")
+  plt.plot(x, fortyfivey, "ko", label="45 derece")
 
   plt.plot(xp, np.polyval(thirty, xp), "b-")
   plt.plot(xp, np.polyval(thirtytwo, xp), "g-")
@@ -35,8 +38,9 @@ def plot_angle_comparison_graphs():
   plt.plot(xp, np.polyval(thirtyseven, xp), "y-")
   plt.plot(xp, np.polyval(forty, xp), "c-")
   plt.plot(xp, np.polyval(fortytwo, xp), "m-")
+  plt.plot(xp, np.polyval(fortyfive, xp), "k-")
 
-  plt.title("RPM vs. Thrust", fontsize=16)
+  plt.title("Thrust vs. RPM", fontsize=16)
   plt.ylabel("Thrust", fontsize=12)
   plt.xlabel("RPM", fontsize=12)
 
